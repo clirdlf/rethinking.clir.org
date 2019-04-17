@@ -27,7 +27,7 @@ def parse_meta(data)
     'layout' => 'post',
     'title' => data.css('#PageTitleH1 > text()').text.strip,
     'author' => data.css('#MainCopy_ctl04_ucPermission_ByLinePanel a').text,
-    'date' => clean_date(data.css('#MainCopy_ctl04_ucPermission_ByLinePanel')),
+    'date' => clean_date(data.css('#MainCopy_ctl04_ucPermission_ByLinePanel'))
     # content: data.css('.blogs-block')
   }
 end
@@ -48,23 +48,22 @@ end
 def get_images(content)
   images = content.search('//img')
 
-  puts "Analyzing images:"
+  puts 'Analyzing images:'
 
   images.each do |img|
     uri = URI.parse(img['src'])
 
-    unless File.basename(uri.path) == ''
-        local_file = "./assets/images/#{File.basename(uri.path)}"
-        download_image(uri, local_file)
-        puts "Downloading #{uri}"
-    end
+    next if File.basename(uri.path) == ''
+
+    local_file = "./assets/images/#{File.basename(uri.path)}"
+    download_image(uri, local_file)
+    puts "Downloading #{uri}"
   end
 end
 
 namespace :import do
-  desc "Import HigherLogic posts"
+  desc 'Import HigherLogic posts'
   task :posts do
-
     f = File.open('lib/blog_links.txt', 'r')
 
     f.each_line do |url|
@@ -80,19 +79,14 @@ namespace :import do
 
       get_images(cleaned_content)
 
-
-      File.open("_posts/#{filename}", "w") do |f|
+      File.open("_posts/#{filename}", 'w') do |f|
         puts "Importing #{filename}"
         f.puts @metadata.to_yaml
         f.puts "---\n\n"
         f.puts cleaned_content
       end
-
-          end
+    end
 
     f.close
-
   end
-
-
 end
