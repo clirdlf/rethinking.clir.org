@@ -2,15 +2,15 @@
 layout: default
 ---
 
-{% include navbar.html %}
 
 <main role="main" class="container">
-  <div class="home">
-    {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-    {%- endif -%}
+  <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto">
 
-    {{ content }}
+    <div class="blog-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+      {{ content }}
+    </div>
+
+
 
     {%- if site.posts.size > 0 -%}
     <h3 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h3>
@@ -46,8 +46,6 @@ layout: default
       {%- endfor -%}
     </div>
 
-
-    <p class="feed-subscribe"><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p>
     {%- endif -%}
 
     {% include pagination.html %}

@@ -1,12 +1,23 @@
 // post elements migrated from higherlogic connect
+@import 'variables';
+
+.blog-header {
+  padding-top: 48px;
+}
+
+.post-list-heading {
+  color: $clir_darkmint;
+}
 
 .blogs-block {
-  border-top: 1px solid #ddd;
+  border-top: 1px solid $separator_color;
   padding: 10px 0 5px;
   margin-top: 5px;
 }
 
 .title-row {
+  margin-left: 25px;
+
   h3 {
     width: 100%;
     font-size: 18px;
@@ -16,11 +27,11 @@
 
   .ByLine {
     font-size: 0.9em;
-    color: #808080;
+    color: $info;
   }
 
   .content-row {
-    padding-left: 15px;
+    // padding-left: 15px;
   }
 
   .margin-top-small {

@@ -1,3 +1,13 @@
-@import 'topbar';
 @import 'posts';
 @import 'navigation';
+@import 'footer';
+
+.clir-font {
+  font-family: 'A028', serif;
+}
+
+.logo {
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}
