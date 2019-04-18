@@ -61,7 +61,16 @@ def get_images(content)
   end
 end
 
+namespace :fix do
+  desc 'Fix image links'
+  task :image_links do
+  end
+end
+
+
 namespace :import do
+
+
   desc 'Import HigherLogic posts'
   task :posts do
     f = File.open('lib/blog_links.txt', 'r')

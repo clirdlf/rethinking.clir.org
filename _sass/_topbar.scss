@@ -1,0 +1,53 @@
+// top bar migrated from clir.org website
+
+.top-bar {
+  display: block;
+  background-color: #9a1c46;
+  height: 40px;
+  font-family: 'Open Sans Pro', 'Open Sans', sans-serif;
+
+  .top-bar-left {
+    float: left;
+    margin-right: 10px;
+  }
+
+  .top-bar-right {
+    float: right;
+  }
+
+  ul {
+    a {
+      color: #fff;
+    }
+
+    li {
+      list-style-type: none;
+      float: left;
+      line-height: 1.8em;
+      height: 40px;
+      padding-top: 6px;
+    }
+
+    li+li {
+      border-left: 1px solid rgba(255,255,255,.5);
+    }
+
+    li.menu-item-object-custom:first-child {
+      padding: 6px 20px 6px 0;
+    }
+
+    li.menu-item-object-custom:not(:first-child) {
+      margin: 0;
+      padding: 6px 20px;
+    }
+  }
+}
+
+footer {
+  background-color: #e6f0f0;
+  padding-bottom: 20px;
+
+  p {
+    padding-top: 40px;
+  }
+}

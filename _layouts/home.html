@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+{% include navbar.html %}
+
+<main role="main" class="container">
+  <div class="home">
+    {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+    {%- endif -%}
+
+    {{ content }}
+
+    {%- if site.posts.size > 0 -%}
+    <h3 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h3>
+    <div class="row">
+
+      {%- for post in paginator.posts -%}
+      <div class="blogs-block">
+        <div class="row title-row">
+          <div col="col-12">
+            <div class="row">
+              <h3>
+                <a class="post-link" href="{{ post.url | relative_url }}">
+                  {{ post.title | escape }}
+                </a>
+              </h3>
+              <div class="ByLine">
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                By {{ post.author }} posted <span class="post-meta">{{ post.date | date: date_format }}</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row content-row">
+            <div class="col-12">
+              <div class="margin-top-small break-word">
+                {{ post.content | strip_html | truncatewords:75 }}
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      {%- endfor -%}
+    </div>
+
+
+    <p class="feed-subscribe"><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p>
+    {%- endif -%}
+
+    {% include pagination.html %}
+  </div>
+</main>

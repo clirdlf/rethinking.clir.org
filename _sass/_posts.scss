@@ -1,0 +1,33 @@
+// post elements migrated from higherlogic connect
+
+.blogs-block {
+  border-top: 1px solid #ddd;
+  padding: 10px 0 5px;
+  margin-top: 5px;
+}
+
+.title-row {
+  h3 {
+    width: 100%;
+    font-size: 18px;
+    // margin-top: 0;
+    // margin-bottom: 3px;
+  }
+
+  .ByLine {
+    font-size: 0.9em;
+    color: #808080;
+  }
+
+  .content-row {
+    padding-left: 15px;
+  }
+
+  .margin-top-small {
+    margin-top: 10px;
+  }
+
+  .break-word {
+    word-wrap: break-word;
+  }
+}
