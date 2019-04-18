@@ -1,3 +1,19 @@
 ---
 layout: default
 ---
+
+
+<main role="main" class="container">
+  <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto">
+
+    <div class="blog-header px-3 py-3 pt-md-5 pb-md-4 mx-auto">
+
+      <h3>{{ page.title }}</h3>
+      {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
+      By {{ page.author }} posted <span class="post-meta">{{ page.date | date: date_format }}
+
+    </div>
+
+    {{ content }}
+  </div>
+</main>

@@ -14,9 +14,8 @@ gem 'jekyll', '~> 3.8.5'
 # gem 'minima', '~> 2.0'
 
 # For converting the older blog posts
-require 'chronic'
-require 'mechanize'
-require 'open-uri'
+gem 'chronic'
+gem 'mechanize'
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.

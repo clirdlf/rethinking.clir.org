@@ -25,9 +25,11 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 paginate: 20
-paginate_path: "/blog/page:num/"
 
+paginate_path: "/blog/page:num/"
+date_format: "%b %-d, %Y"
 show_excerpts: true
+permalink: /blog/:title/
 
 # Build settings
 markdown: kramdown

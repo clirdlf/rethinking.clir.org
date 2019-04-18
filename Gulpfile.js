@@ -52,6 +52,9 @@ function modules() {
   // Bootstrap
   // var bootstrap = gulp.src('./node_modules/bootstrap/dist/**/*')
   //   .pipe(gulp.dest('./vendor/bootstrap'));
+  // Lunr
+  var lunr = gulp.src('./node_modules/lunr/lunr.min.js')
+    .pipe(gulp.dest('./vendor/lunr'));
   // Font Awesome
   var fontAwesome = gulp.src('./node_modules/@fortawesome/**/*')
     .pipe(gulp.dest('./vendor'));
