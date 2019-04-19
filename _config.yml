@@ -26,6 +26,8 @@ permalink: /blog/:title/
 date_format: "%b %-d, %Y"
 show_excerpts: true
 
+google_analytics: 'UA-101351510-4'
+
 # Build settings
 markdown: kramdown
 # theme: minima
