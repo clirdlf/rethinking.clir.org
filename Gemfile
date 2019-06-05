@@ -27,8 +27,10 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
   gem "jekyll-paginate"
-  gem 'github-pages'
+  # gem 'github-pages'
 end
+
+gem "github-pages", group: :jekyll_plugins
 
 # Performance-booster for watching directories on Windows
 gem 'wdm', '~> 0.1.0' if Gem.win_platform?
