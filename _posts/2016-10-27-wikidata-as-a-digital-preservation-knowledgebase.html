@@ -5,62 +5,42 @@ author: Katherine Thornton
 date: 2016-10-27 13:57:00.000000000 -04:00
 ---
 
-<div class="blogs-block ">
-    <div id="MainCopy_ctl04_UpdatePanel3">
-			
-            
-                
 
-                
-
-                <div class="row margin-bottom-medium">
-                    <div class="col-md-8">
-                        
-                    </div>
-                    <div class="col-md-4">
-                        <div id="MainCopy_ctl04_ucPermission_pnlRating" class="pull-right">
-				
-                            
-
-                        
-			</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p><em>Katherine Thornton, CLIR postdoctoral fellow in data curation at Yale University Library, coauthored this piece with Euan Cochrane, digital preservation manager at Yale University Library. It is a condensed version of a <a href="http://openpreservation.org/blog/2016/09/30/wikidata-as-a-digital-preservation-knowledgebase/">longer post</a> published by the Open Preservation Foundation. </em></p>
+<p><em>Katherine Thornton, CLIR postdoctoral fellow in data curation at Yale University Library, coauthored this piece with Euan Cochrane, digital preservation manager at Yale University Library. It is a condensed version of a <a
+      href="http://openpreservation.org/blog/2016/09/30/wikidata-as-a-digital-preservation-knowledgebase/">longer post</a> published by the Open Preservation Foundation. </em></p>
 <p>We’re exploring Wikidata, the (relatively new) Wikipedia for data, as a knowledge base for digital preservation information and would appreciate feedback and involvement.</p>
-<p>At Yale University Library we are beginning a new program of work (with funding from both <a href="https://www.clir.org/fellowships/postdoc">CLIR </a>and <a href="https://www.imls.gov/sites/default/files/lg-70-16-0079_proposal_narrative.pdf">IMLS</a>) to systematically preserve software to support the long-term preservation of our digital collections. One goal of this work is to enable every digital object under our management to be associated with a representative interaction environment that contains a representative set of software that would have been used to interact with the content during the period when it was first created and used. Through the use of emulation tools and services, such as the<a href="http://eaas.uni-freiburg.de/"> bwFLA Emulation as a Service (EaaS) technology</a>, we aim to enable all preserved digital objects to be accessed regardless of the computing environment from which the end-user is accessing the object(s).</p>
-<p>An initial stumbling block in this work has been the lack of comprehensive cataloging tools, databases, and standards for documenting software, and the inability to connect that type of documentation to other digital preservation information such as file format databases and identification tools. This blog post outlines a possible approach to resolving the issue by implementing a collaborative, trustworthy, and transparent technical information management system within the Wikidata framework.</p>
+<p>At Yale University Library we are beginning a new program of work (with funding from both <a href="https://www.clir.org/fellowships/postdoc">CLIR </a>and <a
+    href="https://www.imls.gov/sites/default/files/lg-70-16-0079_proposal_narrative.pdf">IMLS</a>) to systematically preserve software to support the long-term preservation of our digital collections. One goal of this work is to enable every digital
+  object under our management to be associated with a representative interaction environment that contains a representative set of software that would have been used to interact with the content during the period when it was first created and used.
+  Through the use of emulation tools and services, such as the<a href="http://eaas.uni-freiburg.de/"> bwFLA Emulation as a Service (EaaS) technology</a>, we aim to enable all preserved digital objects to be accessed regardless of the computing
+  environment from which the end-user is accessing the object(s).</p>
+<p>An initial stumbling block in this work has been the lack of comprehensive cataloging tools, databases, and standards for documenting software, and the inability to connect that type of documentation to other digital preservation information such
+  as file format databases and identification tools. This blog post outlines a possible approach to resolving the issue by implementing a collaborative, trustworthy, and transparent technical information management system within the Wikidata
+  framework.</p>
 <p><strong>Implementing TOTEM in Wikidata</strong></p>
-<p>TOTEM is the acronym for the <a href="http://www.keep-totem.co.uk/">Trustworthy Online Technical Environment Metadata Registry, </a>created by Janet Delve and David Anderson. The purpose of TOTEM is to establish a standardized set of attributes and relationship descriptor terms to record information about the interrelationships between software and hardware.</p>
-<p>To implement TOTEM in Wikidata we would need to propose properties for all of the attributes that are described in the TOTEM  framework that are not yet available as properties. For example, TOTEM has “processor speed,” “bit width,” “RAM,” “ROM, “motherboard,” as sub-elements to describe hardware configurations we may want to represent. These properties do not currently exist in Wikidata and will need to be proposed.</p>
+<p>TOTEM is the acronym for the <a href="http://www.keep-totem.co.uk/">Trustworthy Online Technical Environment Metadata Registry, </a>created by Janet Delve and David Anderson. The purpose of TOTEM is to establish a standardized set of attributes
+  and relationship descriptor terms to record information about the interrelationships between software and hardware.</p>
+<p>To implement TOTEM in Wikidata we would need to propose properties for all of the attributes that are described in the TOTEM  framework that are not yet available as properties. For example, TOTEM has “processor speed,” “bit width,” “RAM,” “ROM,
+  “motherboard,” as sub-elements to describe hardware configurations we may want to represent. These properties do not currently exist in Wikidata and will need to be proposed.</p>
 <p>Properties can be proposed by any Wikidata user. There is a template for property proposals as seen in the image.</p>
 <p><a href="http://openpreservation.org/wp-content/uploads/2016/09/PropPropose.jpg"><img src="/assets/images/Runeberg.jpg" alt="Runeberg.jpg" caption="false" class="img-responsive"></a>(click image to see larger)</p>
 <p>After properties are proposed the Wikidata community has the opportunity to ask questions, discuss aspects of the proposal, and vote to support or oppose the proposal. The following image is a screenshot of a property proposal discussion.</p>
 <p><a href="http://openpreservation.org/wp-content/uploads/2016/09/PropDiscuss.jpg"><img src="/assets/images/fig-2.jpg" alt="fig-2.jpg" caption="false" class="img-responsive"></a>(click image to see larger)</p>
-<p>Because Wikidata is a wiki implemented in <a href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a> and <a href="http://wikiba.se/">Wikibase</a> software, it is fully versioned and all edits are available for review. This means that all discussions among editors can take place on-wiki and remain in the context of the content to which the editors are referring. A versioned system provides value to the digital preservation community in that the work that goes into refining concepts and tools will remain available for anyone to consult in the future. The fact that these discussions would be taking place on a public wiki also means that people from different organizations could collaborate in this forum.</p>
+<p>Because Wikidata is a wiki implemented in <a href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a> and <a href="http://wikiba.se/">Wikibase</a> software, it is fully versioned and all edits are available for review. This means that all
+  discussions among editors can take place on-wiki and remain in the context of the content to which the editors are referring. A versioned system provides value to the digital preservation community in that the work that goes into refining concepts
+  and tools will remain available for anyone to consult in the future. The fact that these discussions would be taking place on a public wiki also means that people from different organizations could collaborate in this forum.</p>
 <p><strong>Example SPARQL Queries</strong></p>
-<p>The Wikidata SPARQL endpoint maintains a list of <a href="https://query.wikidata.org/">example queries</a> (available from the “Examples” button). Once a SPARQL query has been written it can be reused by others to find updated results. A member of the digital preservation community has written a SPARQL query to answer questions such as:</p>
+<p>The Wikidata SPARQL endpoint maintains a list of <a href="https://query.wikidata.org/">example queries</a> (available from the “Examples” button). Once a SPARQL query has been written it can be reused by others to find updated results. A member of
+  the digital preservation community has written a SPARQL query to answer questions such as:</p>
 <ol>
-<li>I want to know all formats in Wikidata that don’t have property ‘y’</li>
-<li>I want all open source software that can render x and runs on operating system ‘z’</li>
+  <li>I want to know all formats in Wikidata that don’t have property ‘y’</li>
+  <li>I want all open source software that can render x and runs on operating system ‘z’</li>
 </ol>
-<p>Other members of the community could then reuse these queries to quickly and easily leverage the infrastructure to answer relevant questions. We could all benefit from the work of a few SPARQL query writers and be able to answer many different types of data-driven questions.</p>
+<p>Other members of the community could then reuse these queries to quickly and easily leverage the infrastructure to answer relevant questions. We could all benefit from the work of a few SPARQL query writers and be able to answer many different
+  types of data-driven questions.</p>
 <p><strong>Next Steps</strong></p>
-<p>We’re currently seeking feedback on this proposed approach. If no major problems are found, we will be pursuing it at Yale University Library and will soon begin proposing properties to build out the digital preservation model in Wikidata. We’ve created a <a href="https://groups.google.com/d/forum/wikidata-for-digital-preservation">Google group</a> where we will share updates about our work and invite collaboration on the proposal process for new properties to be created in Wikidata. The name of the group is “wikidata-for-digital-preservation.” If you are interested in participating collaboratively, please navigate to that link and request to be added to the group. We would love to have a wide range of voices contributing to this proposed approach. As and when we move forward, we will ask for collaboration on developing the necessary properties to describe software, hardware, operating systems, emulated environments, file formats, etc. We will also seek input on any portal development work we initiate.</p>
-                    </div>
-                </div>
-                
-                <div class="row">
-                    <div class="col-md-12">
-                        
-
-                    </div>
-                </div>
-
-                
-            
-        
-		</div>
-</div>
+<p>We’re currently seeking feedback on this proposed approach. If no major problems are found, we will be pursuing it at Yale University Library and will soon begin proposing properties to build out the digital preservation model in Wikidata. We’ve
+  created a <a href="https://groups.google.com/d/forum/wikidata-for-digital-preservation">Google group</a> where we will share updates about our work and invite collaboration on the proposal process for new properties to be created in Wikidata. The
+  name of the group is “wikidata-for-digital-preservation.” If you are interested in participating collaboratively, please navigate to that link and request to be added to the group. We would love to have a wide range of voices contributing to this
+  proposed approach. As and when we move forward, we will ask for collaboration on developing the necessary properties to describe software, hardware, operating systems, emulated environments, file formats, etc. We will also seek input on any portal
+  development work we initiate.</p>
