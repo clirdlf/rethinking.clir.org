@@ -9,7 +9,7 @@ require 'safe_yaml'
 
 def make_filename(date, title)
   formatted_date = date.strftime('%Y-%m-%d')
-  post_name = title.split(%r{ |!|/|:|&|-|$|,|“|”}).map do |i|
+  post_name = title.split(%r{ |!|/|:|&|-|$|,|"|"}).map do |i|
     i.downcase if i != ''
   end.compact.join('-')
 
