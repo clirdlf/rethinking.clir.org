@@ -26,7 +26,8 @@ permalink: /blog/:title/
 date_format: "%b %-d, %Y"
 show_excerpts: true
 
-google_analytics: 'UA-101351510-4'
+#google_analytics: 'UA-101351510-4'
+google_analytics: 'G-7EPHE6R05Y'
 
 # Build settings
 markdown: kramdown
